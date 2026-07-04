@@ -1,0 +1,15 @@
+# Template only. The LIVE copy of this file is created and updated automatically
+# inside the Unity Catalog volume at:
+#   /Volumes/bank_lakehouse/raw/landing_zone/_checkpoints/watermark_config.yml
+#
+# The bronze notebook reads this file at the start of every run to know where it
+# left off, filters the landing zone for rows newer than "last_watermark", and
+# then rewrites this file with the new max watermark it just loaded.
+# That's the whole incremental / batch-watermarking trick used in this project.
+
+tables:
+  transactions:
+    source_volume_path: /Volumes/bank_lakehouse/raw/landing_zone/transactions
+    watermark_column: transaction_ts
+    last_watermark: "1900-01-01T00:00:00"
+    bronze_table: bank_lakehouse.bronze.bronze_transactions
