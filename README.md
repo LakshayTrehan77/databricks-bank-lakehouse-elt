@@ -1,6 +1,6 @@
 # Bank Lakehouse ETL (Databricks, PySpark)
 
-A small, interview-ready Databricks Lakehouse project. It simulates a bank's
+A Databricks Lakehouse project. It simulates a bank's
 transaction feed landing in batches, and moves it through a **Bronze -> Silver
 -> Gold** medallion pipeline using **watermark-based incremental loading**,
 Unity Catalog **volumes/schemas**, a few **data quality checks**, and some
