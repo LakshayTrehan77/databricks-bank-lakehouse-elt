@@ -12,7 +12,7 @@ transactions, generated inside the project itself.
 ## Folder structure
 
 ```
-databricks-bank-lakehouse-etl/
+databricks-bank-lakehouse-elt/
 ├── README.md
 ├── config/
 │   └── watermark_config.yml        # template of the watermark contract (live copy lives in the Volume)
