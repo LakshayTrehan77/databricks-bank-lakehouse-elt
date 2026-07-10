@@ -1,4 +1,4 @@
-# Bank Lakehouse ETL (Databricks, PySpark)
+# Bank Lakehouse ELT (Databricks, PySpark)
 
 A Databricks Lakehouse project. It simulates a bank's
 transaction feed landing in batches, and moves it through a **Bronze -> Silver
